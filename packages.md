@@ -163,7 +163,7 @@ ttf-droid
 ttf-font-awesome
 
 
-# YAY 
+# AUR 
 tty-clock
 wtf
 cbonsai
