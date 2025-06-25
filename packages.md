@@ -84,6 +84,7 @@ postgresql
 # SECURITY
 nginx
 nmap
+openvpn
 nmon
 tlp
 ufw
