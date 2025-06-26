@@ -165,6 +165,7 @@ ttf-font-awesome
 
 
 # AUR 
+extundelete
 tty-clock
 wtf
 cbonsai
