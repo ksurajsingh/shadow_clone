@@ -21,6 +21,7 @@ hyprland used is JaKooLit's Arch-Hyprland [ which is the most perfectly maintain
 
 ## TODO  
 - [ ] fix this page
+- [ ] try and test omarchy
 - [ ] Add a disclaimer - 
       1. at your own risk
       2. check packages file for the packges requiores [ 🤔 if you could use the packages.md for actuall files that are going to be downlaoded . ]
