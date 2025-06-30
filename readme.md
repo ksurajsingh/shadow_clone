@@ -23,6 +23,7 @@ hyprland used is JaKooLit's Arch-Hyprland [ which is the most perfectly maintain
 - [ ] fix this page
 - [ ] try and test omarchy
 - [ ] try and test prasoon rangan and others
+- [ ] try and test no-script installation
 - [ ] Add a disclaimer - 
       1. at your own risk
       2. check packages file for the packges requiores [ 🤔 if you could use the packages.md for actuall files that are going to be downlaoded . ]
