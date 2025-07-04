@@ -8,6 +8,7 @@ hyprland used is JaKooLit's Arch-Hyprland [ which is the most perfectly maintain
 
 # Very Important 
 
+- [ ] I need to make my dotfiles private ASAP . need to add login features in this script in order to clone my files [ better ]
 - [ ] Try to reduce usage of AUR as much as possible. 
 - [ ] Give options if the user wants AUR and the applications via AUR 
 - [ ] check if there are alternatives
