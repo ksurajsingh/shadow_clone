@@ -17,6 +17,8 @@ kitty
 bluez
 git
 testdisk
+expac
+reflector
 
 # X11
 xorg
@@ -24,12 +26,17 @@ xorg-server
 xorg-xinit
 xorg-xsetroot
 xclip
+xsel
 xcompmgr
 xdotool
 xwallpaper
 xrandr
-
-
+picom
+dunst
+numlockx
+wallset
+xsecurelock
+tor
 
 # DEV_TOOLS
 rsync
@@ -37,7 +44,10 @@ syncthing
 tailscale
 scrcpy
 scrot
-secure-delete
+aria2
+zip
+gzip
+tar
 tmux
 tree
 neovim
@@ -51,13 +61,14 @@ inxi
 jq
 mosh
 openbsd-netcat
-qemu-base
 qemu-full
 zram-generator
 zsh
 ripgrep
 unzip
 7zip
+pandoc-cli
+pyenv
 vde2
 virt-manager
 virt-viewer
@@ -68,8 +79,10 @@ sed
 feh 
 ffmpeg
 mariadb
+postgresql
 
 # SECURITY
+secure-delete
 nginx
 nmap
 nmon
@@ -90,6 +103,7 @@ python-pipx
 # SYS_MONITORING
 at
 duf
+lsof
 dust
 cpupower
 hwinfo
@@ -110,6 +124,7 @@ fzf
 gnome-calculator
 gnome-disk-utility
 mpv
+mktorrent
 blueman
 nautilus
 thunar
@@ -169,3 +184,4 @@ barrier
 vimv
 steghide
 materia-gtk-theme
+pywal

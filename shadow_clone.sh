@@ -93,7 +93,7 @@ sleep 3
 printf '\033c'
 echo -e "${INFO} Installing ${WARNING}Base${RESET}"
 sleep 3
-pacstrap -K /mnt base base-devel linux-lts linux-zen linux-firmware networkmanager efibootmgr grub btrfs-progs ntfs-3g wget gvfs foremost dosfstools kitty bluez reflector git grub testdisk
+pacstrap -K /mnt base base-devel linux-lts linux-zen linux-firmware networkmanager efibootmgr grub btrfs-progs ntfs-3g wget gvfs foremost dosfstools kitty bluez reflector git grub testdisk expac reflector
 # Remaining packages are installed in the chroot environment
 
 # chrooting [ and directing to a different file | for a new shell ]
@@ -282,7 +282,7 @@ sleep 1
 printf '\033c'
 echo -e "${INFO} Setting up ${WARNING}X11${RESET} . . ."
 sleep 3
-pacman -Syu --noconfirm xorg xorg-server xorg-xinit xorg-xsetroot xclip xcompmgr xdotool xwallpaper xorg-xrandr
+pacman -Syu --noconfirm xorg xorg-server xorg-xinit xorg-xsetroot xclip xcompmgr xdotool xwallpaper xorg-xrandr picom xsel dunst python-pywal numlockx wallset
 printf '\033c'
 echo -e "${OK} ${WARNING}X11${RESET} setup complete"
 sleep 1
@@ -291,7 +291,7 @@ sleep 1
 printf '\033c'
 echo -e "${INFO} Setting up ${WARNING}Dev Tools${RESET} . . ."
 sleep 3
-pacman -S --noconfirm rsync syncthing tailscale scrcpy scrot tmux tree neovim vim git-lfs arch-install-scripts gcc npm imagemagick inxi jq mosh openbsd-netcat qemu-base qemu-full zram-generator zsh ripgrep unzip p7zip vde2 virt-manager virt-viewer tigervnc umockdev w3m sed feh ffmpeg mariadb 
+pacman -S --noconfirm rsync syncthing tailscale scrcpy scrot aria2 zip gzip tar tmux tree neovim vim git-lfs arch-install-scripts gcc npm imagemagick inxi jq mosh openbsd-netcat qemu-full zram-generator zsh ripgrep unzip 7zip pandoc-cli pyenv vde2 virt-manager virt-viewer tigervnc umockdev w3m sed feh ffmpeg mariadb postgresql
 printf '\033c'
 echo -e "${OK} ${WARNING}Dev Tools${RESET} setup complete"
 sleep 1
@@ -451,7 +451,7 @@ printf '\033c'
 echo -e "${INFO} Downloading ${MAGENTA}aur${RESET} ${WARNING}packages${RESET}"
 sleep 3
 sleep 1
-yay -S --noconfirm tty-clock wtf cbonsai neofetch pfetch secure-delete hollywood ani-cli steghide auto-cpufreq barrier vimv magnus transmission-gtk transmission-qt google-chrome onlyoffice-bin upscayl-bin android-studio materia-gtk-theme
+yay -S --noconfirm tty-clock wtf cbonsai neofetch pfetch secure-delete hollywood ani-cli steghide auto-cpufreq barrier vimv magnus transmission-gtk transmission-qt google-chrome onlyoffice-bin upscayl-bin android-studio materia-gtk-theme pywal
 echo -e "${OK} ${MAGENTA}aur${RESET} ${WARNING}packages${RESET} BUILT."
 sleep 3
 
