@@ -82,7 +82,6 @@ mariadb
 postgresql
 
 # SECURITY
-secure-delete
 nginx
 nmap
 nmon
@@ -170,18 +169,20 @@ wtf
 cbonsai
 neofetch
 pfetch
+secure-delete
 hollywood
 ani-cli
 magnus
+auto-cpufreq
+speedometer
+barrier
+vimv
+steghide
+materia-gtk-theme
+pywal
 transmission-gtk
 transmission-qt
 upscayl-bin
 onlyoffice-bin
 google-chrome
 android-studio
-auto-cpufreq
-barrier
-vimv
-steghide
-materia-gtk-theme
-pywal

@@ -451,7 +451,7 @@ printf '\033c'
 echo -e "${INFO} Downloading ${MAGENTA}aur${RESET} ${WARNING}packages${RESET}"
 sleep 3
 sleep 1
-yay -S --noconfirm tty-clock wtf cbonsai neofetch pfetch secure-delete hollywood ani-cli steghide auto-cpufreq barrier vimv magnus transmission-gtk transmission-qt google-chrome onlyoffice-bin upscayl-bin android-studio materia-gtk-theme pywal
+yay -S --noconfirm tty-clock wtf cbonsai neofetch pfetch secure-delete hollywood ani-cli magnus auto-cpufreq speedometer barrier vimv steghide materia-gtk-theme pywal transmission-gtk transmission-qt google-chrome onlyoffice-bin upscayl-bin android-studio 
 echo -e "${OK} ${MAGENTA}aur${RESET} ${WARNING}packages${RESET} BUILT."
 sleep 3
 
