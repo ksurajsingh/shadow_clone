@@ -13,6 +13,7 @@ hyprland used is JaKooLit's Arch-Hyprland [ which is the most perfectly maintain
 
 ## TODO  
 - [ ] fix this page
+- [ ] Make Sure there are no personal files
 - [ ] pyenv plugin setup and export those envs in zsh.
 - [ ] dot files isn't cloning `shadow_clone` and `nvim` and `hypr`
 - [ ] careful copying of files/dirs from `dot-files` to main `~/.config`
