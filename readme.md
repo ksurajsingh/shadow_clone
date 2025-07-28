@@ -16,6 +16,7 @@ hyprland used is JaKooLit's Arch-Hyprland [ which is the most perfectly maintain
 - [ ] Make Sure there are no personal files
 - [ ] pyenv plugin setup and export those envs in zsh.
 - [ ] dot files isn't cloning `shadow_clone` and `nvim` and `hypr`
+- [ ] Add options so users can pick if they want `tailscale` and `syncthing` setup. DO these for other packages as well.
 - [ ] careful copying of files/dirs from `dot-files` to main `~/.config`
 - [ ] `xorg-server` package.
 - [ ] `.xauthority` not found.
