@@ -6,6 +6,12 @@ hyprland used is JaKooLit's Arch-Hyprland [ which is the most perfectly maintain
 . .   
 .   
 
+# Very Important 
+
+- [ ] Try to reduce usage of AUR as much as possible. 
+- [ ] Give options if the user wants AUR and the applications via AUR 
+- [ ] check if there are alternatives
+
 ## Testing 
 
 - [ ] check pacman logs to verify all the downloaded packges.
@@ -13,6 +19,12 @@ hyprland used is JaKooLit's Arch-Hyprland [ which is the most perfectly maintain
 
 ## TODO  
 - [ ] fix this page
+- [ ] Add a disclaimer - 
+      1. at your own risk
+      2. check packages file for the packges requiores [ 🤔 if you could use the packages.md for actuall files that are going to be downlaoded . ]
+      3. add that you use JaKooLit and lukesmith/bugswriter's DWM.
+      4. You configure the boot loader [ test that and make for that ] . 
+      5. access the personal space on the hard disk . and that I won't be responsible for any loss that happesn but you can surely notify / talk to me about it. [ give a place for them to talk]
 - [ ] Make Sure there are no personal files
 - [ ] pyenv plugin setup and export those envs in zsh.
 - [ ] dot files isn't cloning `shadow_clone` and `nvim` and `hypr`
