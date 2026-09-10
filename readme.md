@@ -70,6 +70,7 @@ hyprland used is JaKooLit's Arch-Hyprland [ which is the most perfectly maintain
 - [ ] change `perms` and `owners` of mounted points of those subv.
 - [ ] give option for default and custom subvs.
 - [ ] laptop keybindings and pc keybindings could be different for hyprland dots and dwm - make sure to pull those . with option.
+- [ ] scripts have gone with root permission in both /bin and $HOME
 - [ ] after the moun point if created make sure there are no files in that or being installed in that . [ completely wipe `archinstall` from the script ].
 - [ ] make sure DWM is installed from dots itself.
 - [ ] add caveats to not enter any key or ```enter``` it self at any part of the script since that might disorganise you stdin to the future requests for stdin. And the whole thing gets unpredictable. [ fix this ]
