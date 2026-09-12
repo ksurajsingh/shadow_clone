@@ -24,6 +24,12 @@ hyprland used is JaKooLit's Arch-Hyprland [ which is the most perfectly maintain
 - [ ] try and test omarchy
 - [ ] try and test prasoon rangan and others
 - [ ] try and test no-script installation
+- [ ] clean global variable declaration
+- [ ] grace quit
+    - [ ] script failure
+    - [ ] on command
+- [ ] Express run ( no sleep )
+- [ ] Minimal setup ( skip misc packages )
 - [ ] Add a disclaimer - 
       1. at your own risk
       2. check packages file for the packges requiores [ 🤔 if you could use the packages.md for actuall files that are going to be downlaoded . ]
@@ -31,6 +37,9 @@ hyprland used is JaKooLit's Arch-Hyprland [ which is the most perfectly maintain
       4. You configure the boot loader [ test that and make for that ] . 
       5. access the personal space on the hard disk . and that I won't be responsible for any loss that happesn but you can surely notify / talk to me about it. [ give a place for them to talk]
 - [ ] Make Sure there are no personal files
+- [ ] once FS are mounted we have to press enter , fix that
+- [ ] multiple username entries - one is on "building user environment"
+- [ ] Ja's script also has extra spice to pacman.conf - remove one.
 - [ ] pyenv plugin setup and export those envs in zsh.
 - [ ] dot files isn't cloning `shadow_clone` and `nvim` and `hypr`
 - [ ] Add options so users can pick if they want `tailscale` and `syncthing` setup. DO these for other packages as well.
@@ -48,6 +57,15 @@ hyprland used is JaKooLit's Arch-Hyprland [ which is the most perfectly maintain
 - [ ] mention all the points where `user interaction` is required - for ex: entering username . entering passwords . setting up partitions , among others . [ or maybe just automate this ].
 - [ ] setup usage like `curl..chmod +x...` 
 - [ ] fix script stuckking after mounting btrfs subv [ script demands here - enter or any other key ]
+- [ ] fix ssh / GPG setup
+- [ ] chekc how ani-cli does font colors - they have very few lines of code
+- [ ] replace barrier with lan-mouse
+- [ ] Caution
+    - [ ] complete storage
+    - [ ] storage on selected packages
+    - [ ] to turn of secure boot
+    - [ ] to set boot mode to UEFI ( check if this is mandatory )
+    - [ ] install sources AUR / official repository
 - [ ] change subv mount points in fstab while in nvim.
 - [ ] change `perms` and `owners` of mounted points of those subv.
 - [ ] give option for default and custom subvs.
