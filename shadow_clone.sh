@@ -373,7 +373,7 @@ printf '\033c'
 sleep 1 
 echo -e "${INFO} Downloading ${WARNING}scripts${RESET} . . ."
 sleep 3
-myGithub=https://github.com/surajk013/
+myGithub=https://github.com/ksurajsingh/
 homeDir=/home/$user/
 cd ${homeDir}
 git clone "${myGithub}scripts" 
@@ -417,7 +417,7 @@ RESET="$(tput sgr0)"
 
 printf '\033c'
 echo -e "${INFO} ${WARNING}Final build${RESET} for the ${ORANGE}user${RESET} ${MAGENTA}[FINISHING TOUCH]${RESET}"
-myGithub=https://github.com/surajk013/
+myGithub=https://github.com/ksurajsingh/
 
 # download DWMs
 printf '\033c'
@@ -426,7 +426,7 @@ sleep 3
 mkdir -p /mnt/KSS/backUps/archinstall/dwm/ 
 cd /mnt/KSS/backUps/archinstall/dwm/ 
 dwm_package=(dwm st dwmblocks dmenu)
-myGithub=https://github.com/surajk013/
+myGithub=https://github.com/ksurajsingh/
 
 for repo in "${dwm_package[@]}"; do 
   git clone "$myGithub$repo"
