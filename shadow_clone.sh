@@ -535,11 +535,10 @@ echo -e "${INFO} Downloading ${WARNING}Dots${RESET}"
 sleep 3
 cd $HOME
 git clone "${myGithub}dot-files"
-cd $HOME/.config/hypr/
-cp configs/Keybinds.conf configs/Keybinds.conf.bak 
-cp UserConfigs/UserKeybinds.conf UserConfigs/UserKeybinds.conf.bak
 cd $HOME/.config/
-mkdir tmux qutebrowser kitty nvim gtk-3.0 
+cp -r hypr hypr.personal.bak
+# cp configs/Keybinds.conf configs/Keybinds.conf.bak 
+# cp UserConfigs/UserKeybinds.conf UserConfigs/UserKeybinds.conf.bak
 cd $HOME/dot-files/
 cp -r . "$HOME/.config/"
 echo -e "Is this for Desktop? [y/n]: "
@@ -555,9 +554,10 @@ else
   echo -e "${OK} ${WARNING}Laptop${RESET} config updated"
   sleep 3
 fi
+echo -e "${OK} Syncthing Setup Complete."
 
 cp .zshrc .vimrc "$HOME/"
-echo -e "${OK} Syncthing Setup Complete."
+echo -e "${OK} zshrc vimrc restored."
 sleep 3
 echo -e "${OK} dots updated"
 sleep 3
