@@ -93,6 +93,8 @@ hyprland used is JaKooLit's Arch-Hyprland [ which is the most perfectly maintain
     - [ ] kernel compile  
     - [ ] kernel selection  
     - [ ] TTA [express/instant/stanadard]
+    - [ ] dot-files selections
+- [ ] tmux setup
 
 1.Automation - there are parts in between the script where user intervention is required   
 2.Generalisation - Right now it is only personalised to fit my needs [ may fir yours ]   
