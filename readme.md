@@ -77,7 +77,28 @@ hyprland used is JaKooLit's Arch-Hyprland [ which is the most perfectly maintain
 - [ ] add caveats to not enter any key or ```enter``` it self at any part of the script since that might disorganise you stdin to the future requests for stdin. And the whole thing gets unpredictable. [ fix this ]
 - [ ] Alert user for syncthing backup  
 - [ ] Implement checks  
+- [ ] what is user messes up entering passwords to setting up drives  
+- [ ] alert user on few events - give an option to make it silent  
+- [ ] replace  
+  barrier - > lan-mouse  [test in both hyprland and dwm]
+  hoppscotch  
+- [ ] debloat ANSI script  
+- [ ] TTA 
+    - [ ] Optimize TTA by time  
+        - [ ] EXPRESS  
+        - [ ] INSTANT  
+    - [ ] Optimize TTA by command  
+- [ ] Choices  
+    - [ ] kernel download  
+    - [ ] kernel compile  
+    - [ ] kernel selection  
+    - [ ] TTA [express/instant/stanadard]
+
 1.Automation - there are parts in between the script where user intervention is required   
 2.Generalisation - Right now it is only personalised to fit my needs [ may fir yours ]   
 3.Begineer friendly - I haven't made a guide nor comments that would help a begineer.   
 4.Verification - Since this is a linear scripts I have to make sure that one module of the script is successful to process for the successive module   
+
+# Automation 
+- [ ] 0 user intervention  
+- [ ] 0 user interactoin  

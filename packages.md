@@ -34,7 +34,6 @@ xrandr
 picom
 dunst
 numlockx
-wallset
 xsecurelock
 tor
 
@@ -182,6 +181,7 @@ vimv
 steghide
 materia-gtk-theme
 pywal
+wallset
 transmission-gtk
 transmission-qt
 upscayl-bin
