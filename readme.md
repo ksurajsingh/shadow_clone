@@ -10,6 +10,19 @@ I plan to remove that in the future releases [mostly happening in Express versio
 
 > P.S: I plan to have an INSTANT version as well - which would be faster than EXPRESS and more minimalistic.
 
+---
+
+> Usage 
+```bash
+curl -fsSOL https://raw.githubusercontent.com/ksurajsingh/shadow_clone/refs/heads/dev/shadow_clone.sh
+bash shadow_clone.sh
+
+``` 
+or  
+```bash
+wget -q https://raw.githubusercontent.com/ksurajsingh/shadow_clone/refs/heads/dev/shadow_clone.sh
+bash shadow_clone.sh
+```
 # Very Important 
 
 - [ ] I need to make my dotfiles private ASAP . need to add login features in this script in order to clone my files [ better ]
