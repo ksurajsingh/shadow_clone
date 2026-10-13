@@ -73,12 +73,18 @@ hyprland used is JaKooLit's Arch-Hyprland [ which is the most perfectly maintain
 - [ ] scripts have gone with root permission in both `/bin` and `$HOME`
 - [ ] add AI support to nvim
 - [ ] after the moun point if created make sure there are no files in that or being installed in that . [ completely wipe `archinstall` from the script ].
-- [ ] make sure DWM is installed from dots itself.
+- [ ] exp-make sure DWM is installed from dots itself.
+    - [ ] looks like dwm and st fails installation
+- [ ] exp-hyprland is installed from my dots
+    - [ ] .zshrc gets overridden by linuxBeginnings/kool's dots
+- [ ] setup of storage based on user choices  - if its for pool of vms- then setup virsh pool on it
+    - [ ] though your partition might be in the fstab - it might be possible that libvirtd starts before that, 
+    and might therefore break - check if a `RequriesMountsFor=/your/parition` is required in its systemctl edit libvirtd
 - [ ] add caveats to not enter any key or ```enter``` it self at any part of the script since that might disorganise you stdin to the future requests for stdin. And the whole thing gets unpredictable. [ fix this ]
 - [ ] Alert user for syncthing backup  
 - [ ] Implement checks  
 - [ ] what is user messes up entering passwords to setting up drives  
-- [ ] alert user on few events - give an option to make it silent  
+- [ ] alert user on few events - give an option to make it silent [ default would be it producing some sound ]
 - [ ] replace  
   barrier - > lan-mouse  [test in both hyprland and dwm]
   hoppscotch  

@@ -115,6 +115,16 @@ sleep 3
 sed '1,/^# Root$/d' "$(basename "$0")" > /mnt/shadow_clone_root_section.sh
 chmod +x /mnt/shadow_clone_root_section.sh
 arch-chroot /mnt ./shadow_clone_root_section.sh
+
+read -p 'Do you want to reboot?[y/n]: ' rebootlivech
+if [[ $rebootlivech = y ]]; then
+  echo "Rebooting . . ."
+  sleep 3 
+  reboot
+else
+  echo "Not rebooting. . ."
+fi
+
 exit
 
 # Root
@@ -285,36 +295,7 @@ printf '\033c'
 echo -e "${OK} ${WARNING}X11${RESET} setup complete"
 sleep 1
 
-# download DWMs
-printf '\033c'
-echo -e "${INFO} Downloading ${WARNING}DWM${RESET} . . ."
-sleep 3
-dwm_dir=/home/$user/dwm
-mkdir -p $dwm_dir
-cd $dwm_dir
-dwm_packages=(dwm st dwmblocks dmenu)
-myGithub=https://github.com/ksurajsingh/
-
-for repo in "${dwm_packages[@]}"; do
-  git clone "$myGithub$repo"
-done
-
-echo -e "${OK} ${WARNING}DWM${RESET} successfully downloaded"
-sleep 3
-
-# installing DWM
-printf '\033c'
-echo -e "${INFO} Installing ${WARNING}DWM${RESET}"
-sleep 3
-cd $dwm_dir
-cd dwm && make clean install &&
-cd ../st && make clean install &&
-cd ../dmenu && make clean install &&
-cd ../dwmblocks && make clean install
-echo -e "${OK} ${WARNING}DWM${RESET} installation done"
-sleep 3
-
-# Base setup complete - setting up final script for user
+# Base setup complete - setting up standard script for user - extras
 printf '\033c'
 echo -e "${OK} ${WARNING}Base user ${RESET} setup done."
 sleep 3
@@ -344,8 +325,36 @@ else
   sleep 3
 fi
 echo -e "${OK} Syncthing Setup Complete."
-cp .zshrc .vimrc .xinitrc "/home/$user/"
+cp .zshrc .vimrc "/home/$user/"
 echo -e "${OK} zshrc vimrc restored."
+
+# installing DWM
+printf '\033c'
+echo -e "${INFO} Installing ${WARNING}DWM${RESET}"
+sleep 3
+cd dwm
+
+## todo verify all of these installations - st fails
+echo -e "${INFO} setting up dwm"
+cd dwm && make clean install &&
+echo -e "${OK} dwm installed"
+echo -e "${INFO} setting up st"
+cd ../st && make clean install &&
+echo -e "${OK} st setup"
+echo -e "${INFO} setting up dmenu"
+cd ../dmenu && make clean install &&
+echo -e "${OK} dmenu setup"
+echo -e "${INFO} setting up dwmblocks"
+cd ../dwmblocks && make clean install
+echo -e "${OK} dwmblocks setup"
+cd .. 
+cp .xinitrc /home/$user/
+echo -e "${OK} .xinitrc restored ${RESET}"
+echo -e "${OK} ${WARNING}DWM${RESET} installation done"
+cd /home/$user/dot-files
+sleep 3
+
+
 sleep 3
 echo -e "${OK} dots updated"
 chown $user:$user -R /home/$user
@@ -369,6 +378,7 @@ if [[ $cleanup = y ]] ; then
 else
   echo -e 'Not cleaning up'
 fi
+
 exit
 
 # Extras
